@@ -1,3 +1,15 @@
+document.getElementById('billingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const customerName = document.getElementById('customerName').value;
+    const amount = document.getElementById('amount').value;
+    const date = document.getElementById('date').value;
+
+    const summary = `Customer: ${customerName} <br> Amount: $${amount} <br> Date: ${date}`;
+    
+    document.getElementById('summary').innerHTML = summary;
+    document.getElementById('invoiceOutput').style.display = 'block';
+});
 body {
     font-family: Arial, sans-serif;
     margin: 0;
