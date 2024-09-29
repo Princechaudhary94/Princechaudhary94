@@ -1,12 +1,36 @@
-- 👋 Hi, I’m @Princechaudhary94
-- 👀 I’m interested in reading...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on business building...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Billing System</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Invoice</h2>
+            <form id="billingForm">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" required>
 
-<!---
-Princechaudhary94/Princechaudhary94 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Generate Invoice</button>
+            </form>
+        </section>
+        <section id="invoiceOutput" style="display:none;">
+            <h2>Invoice Summary</h2>
+            <p id="summary"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
